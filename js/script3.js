@@ -16,15 +16,15 @@ $('#buttonrun3').click(function() {
             console.log(JSON.stringify(result));
              if (result.status.name == "ok") {
 
-                $("#txtDistance").html(result["data"][0]["distance"]);
-                $("#txtGeonameID").html(result["data"][0]["geonameId"]);
-                $("#txtName").html(result["data"][0]["name"]);
+                $("#txtDistance").html("Distance: " + result["data"]["distance"]);
+                $("#txtGeonameId").html("Ocean Id: " + result["data"]["geonameId"]);
+                $("#txtName").html("Ocean Name: " + result["data"]["name"]);
 
             }
         
         },
         error: function(jqXHR, textStatus, errorThrown) {
-            console.log("Please enter a lat or long that is over water.")
+            console.log("Please enter a valid latitude or longitude that is over water.")
            
            }
       }); 

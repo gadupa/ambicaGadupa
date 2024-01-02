@@ -13,58 +13,36 @@
             <tr>
                 <td>1. TIMEZONE</td>
                 <td><p id="tabledescriptions">
-                    **Returns the timezone at the given longtitute and latitude.</p>
+                    **Returns the timezone at the given latitude and longitude.</p>
+                    
                     <label for="lat">Enter the Latitude: </label>
-                    <select name="lat" id="lat">
-                        <option value="2.319871">2.319871</option>
-                        <option value="3.4715">3.4715</option>
-                        <option value="5.2016">5.2016</option>
-                        <option value="4.7241">4.7241</option>
-                      </select>
+                    <input type="number" id="lat" name="latitude">
+
                     <label for="lng">Enter the Longitude: </label>
-                    <select name="lng" id="lng">
-                        <option value="46.734568">46.734568</option>
-                        <option value="33.1376">33.1376</option>
-                        <option value="25.3043">25.3043</option>
-                        <option value="18.7832">18.7832</option>
-                      </select>
+                    <input type="number" id="lng" name="longitude">
+                    
                 </td>
                 <td>
                   <button class="button" id="buttonrun1">Submit</button>
                 </td>
             </tr>
             <tr> 
-                <td>2.WEATHER</td>
+                <td>2. WEATHER</td>
                 <td><p>
                     **Returns a list of weather stations with the most recent weather observation</p>
                   <p>  
                     <label for="north">North: </label>
-                    <select name="north" id="north">
-                    <option value="30">30</option>
-                    <option value="50">50</option>
-                    <option value="60">60</option>
-                    <option value="80">80</option> </select>    
+                    <input type="number" id="north" name="north">
                     
                     <label for="south">South: </label>
-                    <select name="south" id="south">
-                    <option value="40">40</option>
-                    <option value="80">80</option>
-                    <option value="70">70</option>
-                    <option value="30">30</option> </select>
+                    <input type="number" id="south" name="south">
 
                     <label for="east">East: </label>
-                    <select name="east" id="east">
-                    <option value="60">60</option>
-                    <option value="20">20</option>
-                    <option value="80">80</option>
-                    <option value="90">90</option> </select>
+                    <input type="number" id="east" name="east">
 
                     <label for="west">West: </label>
-                    <select name="west" id="west">
-                    <option value="90">90</option>
-                    <option value="60">60</option>
-                    <option value="100">100</option>
-                    <option value="120">120</option> </select>
+                    <input type="number" id="west" name="west">
+                    
                   </p>
                 </td>
                 <td>
@@ -73,22 +51,14 @@
               </tr>
         
             <tr>
-                <td>3.OCEAN</td>
+                <td>3. OCEAN</td>
                 <td><p>**Returns the nearest Oceans</p>
-                    <label for="oceanlat">Enter the Latitude: </label>
-                    <select name="oceanlat" id="oceanlat">
-                        <option value="14.5994">14.5994</option>
-                        <option value="33.1376">33.1376</option>
-                        <option value="25.3043">25.3043</option>
-                        <option value="8.7832">8.7832</option>
-                    </select>
-                    <label for="oceanlng">Enter the Longitude: </label>
-                    <select name="oceanlng" id="oceanlng">
-                        <option value="28.6731">28.6731</option>
-                        <option value="81.8262">81.8262</option>
-                        <option value="90.0659">90.0659</option>
-                        <option value="124.5085">124.5085</option>
-                      </select>
+                    <label>Enter the Latitude: </label>
+                    <input type="number" id="oceanlat" name="oceanlat">
+
+                    <label>Enter the Longitude: </label>
+                    <input type="number" id="oceanlng" name="oceanlng">
+                      
                  </td>
                 <td>
                     <button class="button" id="buttonrun3">Submit</button>
@@ -107,10 +77,10 @@
             
             <tr>
                 <td><p>Result of Weather API Call</p></td>
-                <td><p id="txtA">StationName: </p>
-                    <p id="txtB">Temperature: </p>
-                    <p id="txtC">Clouds: </p>
-                    <p id="txtD">Humidity: </p>
+                <td><p id="txtStationName">StationName: </p>
+                    <p id="txtTemperature">Temperature: </p>
+                    <p id="txtClouds">Clouds: </p>
+                    <p id="txtHumidity">Humidity: </p>
                 </td>
             </tr>
             
@@ -123,14 +93,13 @@
             </tr>
         </table>
         <!--<script type="application/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>-->
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js"
                 integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
                 crossorigin="anonymous"></script>
-        <!--<script type="application/javascript" src="jquery-2.2.3.min.js"></script>-->
-        <script type="application/javascript" src="script1.js"></script>
-        <script type="application/javascript" src="script2.js"></script>
-        <script type="application/javascript" src="script3.js"></script>
-        
+        <!--<script type="application/javascript" src="js/jquery-2.2.4.min.js"></script>-->
+        <script type="application/javascript" src="js/script1.js"></script>
+        <script type="application/javascript" src="js/script2.js"></script>
+        <script type="application/javascript" src="js/script3.js"></script>
 
     </body>
     <footer>

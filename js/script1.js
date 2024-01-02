@@ -8,20 +8,20 @@ $('#buttonrun1').click(function() {
       type: "POST",
       dataType: "json",
       data: {
-        longitude: $("#lng").val(),
         latitude: $("#lat").val(),
+        longitude: $("#lng").val(),
       },
       success: function(result) {
         console.log(JSON.stringify(result));
   
         if (result.status.name == "ok") {
-  
-          $("#txtSunrise").html(result["data"][0]["sunrise"]);
-          $("#txtSunset").html(result["data"][0]["sunset"]);
-          $("#txtCountry").html(result["data"][0]["countryName"]);
-          $("#txtTimeZone").html(result["data"][0]["timezoneId"]);
-          $("#txtTimeNow").html(result["data"][0]["time"]);
-  
+
+          $("#txtSunrise").html("Sunrise: " + result["data"]["sunrise"]);
+          $("#txtSunset").html("Sunset: " + result["data"]["sunset"]);
+          $("#txtTimeZone").html("Timezone: " + result["data"]["timezoneId"]);
+          $("#txtCountry").html("Country: " + result["data"]["countryName"]);
+          $("#txtTimeNow").html("Time Now: " + result["data"]["time"]);
+
         }
       
       },

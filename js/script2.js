@@ -17,10 +17,10 @@ $('#buttonrun2').click(function() {
         console.log(JSON.stringify(result));
         if (result.status.name == "ok") {
 
-        $("#txtA").html(result["data"][0]["stationName"]);
-        $("#txtB").html(result["data"][0]["temperature"]);
-        $("#txtC").html(result["data"][0]["clouds"]);
-        $("#txtD").html(result["data"][0]["humidity"]);
+        $("#txtStationName").html("StationName: " + result["data"][0]["stationName"]);
+        $("#txtTemperature").html("Temperature: " + result["data"][0]["temperature"]);
+        $("#txtClouds").html("Clouds: " + result["data"][0]["clouds"]);
+        $("#txtHumidity").html("Humidity: " + result["data"][0]["humidity"]);
 
         }
       },
